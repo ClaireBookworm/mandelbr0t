@@ -1,6 +1,6 @@
 # mandelbr0t
 
-Feel free to change the canvas size -- anything more 100 by 100 will probably be too slow.
+Feel free to change the canvas size -- anything more 1000 by 1000 will probably be too slow (*500 by 500 is quite fast*).
 
 Click to zoom in, currently there is no zoom out so be careful where you click. If you click on the right place, you can go on forever, but if you click incorrectly, you'll be stuck forever.
 
