@@ -11,7 +11,6 @@ public class Mandelbrot {
   private static Color[] randomColors;
   private static void assignColors() {
     randomColors = new Color[maxIterations+1];
-    randomColors[0] = new Color((float)Math.random(), (float)Math.random(), (float)Math.random());
     for (int i=1; i<=maxIterations; i++) {
       randomColors[i] = new Color((float)Math.random(), (float)Math.random(), (float)Math.random());
     }
