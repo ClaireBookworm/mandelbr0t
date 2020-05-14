@@ -5,9 +5,9 @@ import java.awt.*;
 public class Mandelbrot {
   private double xMin, xMax;
   private double yMin, yMax;
-  private static int maxIterations = 1500;
-  private static int canvasWidth = 1000;
-  private static int canvasHeight = 1000;
+  private static int maxIterations = 1000;
+  private static int canvasWidth = 640;
+  private static int canvasHeight = 640;
   private static Color[] randomColors;
   private static void assignColors() {
     randomColors = new Color[maxIterations+1];
@@ -36,7 +36,7 @@ public class Mandelbrot {
       }
       drawn = true;
       
-      if (StdDraw.mousePressed()) {
+      if (StdDraw.isMousePressed()) {
         StdDraw.clear();
         m.zoomIn(StdDraw.mouseX(), StdDraw.mouseY());
         drawn = false;
